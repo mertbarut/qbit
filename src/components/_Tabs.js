@@ -44,7 +44,7 @@ const _Tabs = ({tabs}) => {
                     key={post.id}
                     className="relative p-3 rounded-md hover:bg-coolGray-100"
                   >
-                    <h3 className="text-sm font-medium leading-5">
+                    <h3 className="text-sm font-medium leading-5 text-center">
                       {post.title}
                     </h3>
 

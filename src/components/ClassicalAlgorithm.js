@@ -124,7 +124,7 @@ const Algorithm = ({algorithmName, pokemonName}) => {
   return (
     <ThemeProvider theme={classicalTheme}>
       <ChatBot
-        height='300px'
+        height='400px'
         bubbleStyle={{ fontSize: '12px' }}
         hideBotAvatar={true}
         botDelay={0}

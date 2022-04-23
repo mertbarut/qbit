@@ -72,17 +72,17 @@ const tabs = {
     {
       id: 1,
       title: ``,
-      content: 'Suppose you have access to an unsorted list that contain every pokemon species imaginable. \
+      content: 'Suppose you have access to an unsorted list that contains every pokemon species imaginable. \
       You are trying to find out if your favorite pokemon is in this list.',
       commentCount: 5,
       shareCount: 2,
     },
     {
       id: 2,
-      title: "Our Offers",
-      content: 'We offer a classical algorithm that iterates through each pokemon \
-      in the list and checks if it matches your favorite pokemon: linear search. \
-      We also offer an ultra elegant solution that utilizes a quantum algorithm, namely Grover\'s algorithm.',
+      title: "Two Options",
+      content: 'You are offered a classical algorithm that iterates through each pokemon \
+        in the list and checks if it matches your favorite pokemon -- linear search. \
+        We also offer an elegant solution that utilizes a quantum algorithm, namely Grover\'s algorithm.',
 
       commentCount: 3,
       shareCount: 2,
@@ -159,7 +159,7 @@ const App = () => {
                 </div>
                 <div className={`p-10 max-w-lg ${colorScheme.box_choice} border-transparent rounded-md shadow-lg space-y-2`}>
                   <div className={`p-2 text-center max-w-lg ${colorScheme.box5} border-transparent rounded-md shadow-md space-y-2`}>
-                    <strong>What do you choose?</strong>
+                    <strong>Choose carefully</strong>
                   </div>
                   <_RadioGroup selected={selected} setSelected={setSelected} choices={choices} />
                 </div>

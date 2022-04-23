@@ -42,7 +42,7 @@ const Algorithm = ({algorithmName, pokemon}) => {
           <Game />
         </div>
       ),
-      delay: 2000,
+      delay: 9000,
       //end: true,
       placeholder: '???',
       trigger: 4,
@@ -52,7 +52,7 @@ const Algorithm = ({algorithmName, pokemon}) => {
   chatLog.push({
     id: 4,
     message: `Almost done! Double checking...`,
-    delay: 55 * 1000,
+    delay: 43 * 1000,
     trigger: 5,
     placeholder: '???',
   })
@@ -99,7 +99,7 @@ const Algorithm = ({algorithmName, pokemon}) => {
   return (
     <ThemeProvider theme={quantumTheme}>
       <ChatBot
-        height='500px'
+        height='320px'
         bubbleStyle={{ fontSize: '12px' }}
         hideBotAvatar={true}
         hideUserAvatar={true}
