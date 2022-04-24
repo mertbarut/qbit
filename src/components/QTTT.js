@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import PropTypes from 'prop-types';
 
 function calculateWinner(squares) {
   const lines = [
@@ -23,14 +22,14 @@ function calculateWinner(squares) {
 
 const Square = ({value, onClick}) => {
     return (
-      <button className={`bg-slate-200 border-none text-xs text-black ${value === 'X' ? 'bg-emerald-300' : (value === 'O' ? 'bg-purple-300': 'bg-white') }`} onClick={onClick}>
+      <button className={`bg-slate-200 border-none text-xs text-black ${value === 'X' ? 'bg-emerald-300' : (value === 'Q' ? 'bg-purple-300': 'bg-white') }`} onClick={onClick}>
         {value}
       </button>
     )
 }
 
 const Board = ({squares, onClick}) => (
-  <div className="border-2 border-purple-300 border-solid bg-purple-200 w-20 h-20 grid grid-cols-3 grid-rows-3 gap-1">
+  <div className="m-auto border-2 border-purple-300 border-solid bg-purple-200 w-20 h-20 grid grid-cols-3 grid-rows-3 gap-1">
     {squares.map((square, i) => (
       <Square key={i} value={square} onClick={() => onClick(i)} />
     ))}
@@ -43,14 +42,14 @@ const Game = () => {
   const [xIsNext, setXisNext] = useState(true)
   const winner = calculateWinner(history[stepNumber])
   const x = xIsNext ? "X" : "X"
-  const o = !xIsNext ? "O" : "O"
+  const o = !xIsNext ? "Q" : "Q"
 
   const handleClick = (i) => {
     const historyPoint = history.slice(0, stepNumber + 1)
     const current = historyPoint[stepNumber]
     const squares = [...current]
     const prevMoveX = squares.indexOf('X')
-    const prevMoveO = squares.indexOf('O')
+    const prevMoveO = squares.indexOf('Q')
 
     if (winner || squares[i]) return;
 
@@ -102,7 +101,7 @@ const Game = () => {
           squares[6] = o
         }
       } else if (prevMoveX === 5) {
-        if (diff === 5|| diff === 3 || diff == 1) { 
+        if (diff === 5|| diff === 3 || diff === 1) { 
           squares[1] = o
           squares[7] = o
         } else if (diff === 4 || diff === 2) {
