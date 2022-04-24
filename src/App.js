@@ -81,8 +81,8 @@ const tabs = {
       id: 2,
       title: "Two Options",
       content: 'You are offered a classical algorithm that iterates through each pokemon \
-        in the list and checks if it matches your favorite pokemon -- linear search. \
-        We also offer an elegant solution that utilizes a quantum algorithm, namely Grover\'s algorithm.',
+        in the list and checks if it matches your favorite pokemon -- this is linear search. \
+        There is also an elegant solution that utilizes a quantum algorithm, namely Grover\'s algorithm.',
 
       commentCount: 3,
       shareCount: 2,

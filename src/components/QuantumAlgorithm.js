@@ -23,7 +23,7 @@ const Algorithm = ({algorithmName, pokemon}) => {
       id: 1,
       message: `Looking for ${pokemon.name} in the list...`,
       trigger: 2,
-      delay: 1000,
+      delay: 2000,
       replace: true,
       placeholder: '???',
     },
@@ -31,7 +31,7 @@ const Algorithm = ({algorithmName, pokemon}) => {
       id: 2,
       message: `Let's play Tiq-Taq-Toe! (Not to be confused with Tic-Tac-Toe)`,
       trigger: 3,
-      delay: 2000,
+      delay: 4000,
       replace: true,
       placeholder: '???',
     },
@@ -42,7 +42,7 @@ const Algorithm = ({algorithmName, pokemon}) => {
           <Game />
         </div>
       ),
-      delay: 9000,
+      delay: 10000,
       //end: true,
       placeholder: '???',
       trigger: 4,
@@ -52,7 +52,7 @@ const Algorithm = ({algorithmName, pokemon}) => {
   chatLog.push({
     id: 4,
     message: `Almost done! Double checking...`,
-    delay: 43 * 1000,
+    delay: 40 * 1000,
     trigger: 5,
     placeholder: '???',
   })
@@ -75,7 +75,7 @@ const Algorithm = ({algorithmName, pokemon}) => {
         />
       </div>
     ),
-    delay: 2000,
+    delay: 5000,
     placeholder: '???',
     trigger: 7,
   })
