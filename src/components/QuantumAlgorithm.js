@@ -90,7 +90,7 @@ const Algorithm = ({algorithmName, pokemon}) => {
 
   chatLog.push(    {
     id: 8,
-    message: `b̵̛͓̣͛̚͝y̷͕̫̯̥̹̪̼̭̍̈́̓̃e̴̜͈̔͒̕`,
+    message: `Bye bye!`,
     end: true,
     delay: 1500,
     placeholder: '???',

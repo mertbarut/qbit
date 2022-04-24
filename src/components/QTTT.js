@@ -192,7 +192,7 @@ const Game = () => {
         onClick={handleClick}
       />
       <div >
-        <h3 className="text-center text-xs py-3" >{winner ? "Winner: " + winner : " " + x}</h3>
+        <h3 className="text-center text-xs py-3" >{winner ? "You Lost in Two Steps" : "Click on a tile to play"}</h3>
       </div>
     </div>
   )
